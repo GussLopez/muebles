@@ -5,25 +5,28 @@ import { silla, cajoneras, mesas, roperos, centro, sillones, otros } from '../da
 import Footer from "../components/Footer.js";
 
 export default function sillas() {
-  
+
 
   return (
     <>
       <Header />
       <div className="bg-[var(--claro)]">
 
-        <div className="grid grid-cols-3 gap-8 items-center mb-5  max-w-[1400px] mx-auto px-4 overflow-hidden">
-          <div className="col-span-2">
-            <h1 className="text-5xl font-semibold text-[var(--primario)]">Nuestros Muebles</h1>
-            <p className="mb-10 text-xl text-gray-800">Contamos con una amplia variedad de diseños, tamaños y pueden ser pintados del color que desee</p>
+        <div className="lg:grid lg:grid-cols-2 xl:grid-cols-3 gap-8 items-center mb-5  max-w-[1400px] mx-auto px-4 overflow-hidden">
+          <div className="xl:col-span-2 py-15">
+            <h1 className="text-5xl font-bold text-[var(--primario)] mb-4">Diseños listos para transformar tu espacio</h1>
+            <p className="mb-10 text-lg lg:w-[70%] text-gray-700">Descubre nuestra variedad de muebles en distintos estilos y tamaños, personalizables con el color que más te guste.</p>
           </div>
-          <ReactPlayer
-            url={'/productos/video/heroVideo.mp4'}
-            playing={true}
-            muted={true}
-            loop={true}
+          <div className="hidden lg:block">
 
-          />
+            <ReactPlayer
+              url={'/productos/video/heroVideo.mp4'}
+              playing={true}
+              muted={true}
+              loop={true}
+
+            />
+          </div>
         </div>
       </div>
       <main className="max-w-[1400px] mx-auto px-4 py-5">

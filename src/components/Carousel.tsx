@@ -62,7 +62,7 @@ export default function ProdcutCarousel({ path, data = [] }: dataProps) {
       <div className="relative w-full">
         {showLeftButton && (
           <button
-            className="absolute -left-6 top-1/2 -translate-y-1/2 z-10 bg-white/80 hover:bg-white shadow-md rounded-full"
+            className="absolute -left-6 top-1/2 -translate-y-1/2 z-10 cursor-pointer bg-white/80 hover:bg-white shadow-md rounded-full"
             onClick={scrollLeft}
           >
             <ChevronLeft className="h-8 w-8" width={20} />
@@ -92,7 +92,7 @@ export default function ProdcutCarousel({ path, data = [] }: dataProps) {
 
         {showRightButton && (
           <button
-            className="absolute -right-6 top-1/2 -translate-y-1/2 z-10 bg-white/80 hover:bg-white shadow-md rounded-full"
+            className="absolute -right-6 top-1/2 -translate-y-1/2 z-10 bg-white/80 cursor-pointer hover:bg-white shadow-md rounded-full"
             onClick={scrollRight}
           >
             <ChevronRight className="h-8 w-8" size={20} />

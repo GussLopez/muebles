@@ -30,22 +30,22 @@ export default function Header() {
               </button>
             </li>
             <li className="w-full">
-              <a href="#" className="block px-4 py-2 w-full hover:bg-gray-100">
+              <a href="/" className="block px-4 py-2 w-full hover:bg-gray-100">
                 Inicio
               </a>
             </li>
             <li className="w-full">
-              <a href="#" className="block px-4 py-2 w-full hover:bg-gray-100">
+              <a href="/muebles" className="block px-4 py-2 w-full hover:bg-gray-100">
                 Muebles
               </a>
             </li>
             <li className="w-full">
-              <a href="#" className="block px-4 py-2 w-full hover:bg-gray-100">
+              <a href="/nosotros" className="block px-4 py-2 w-full hover:bg-gray-100">
                 Sobre Nosotros
               </a>
             </li>
             <li className="w-full">
-              <a href="#" className="block px-4 py-2 w-full hover:bg-gray-100">
+              <a href="/contacto" className="block px-4 py-2 w-full hover:bg-gray-100">
                 Contacto
               </a>
             </li>
@@ -59,13 +59,8 @@ export default function Header() {
               </Link>
             </li>
             <li className="hidden md:block">
-              <Link to="/productos" className="flex items-center font-semibold text-sm hover:text-[var(--secundario)] transition-colors">
-                Productos
-              </Link>
-            </li>
-            <li className="hidden md:block">
-              <Link to="/nosotros" className="flex items-center font-semibold text-sm hover:text-[var(--secundario)] transition-colors">
-                Sobre nosotros
+              <Link to="/muebles" className="flex items-center font-semibold text-sm hover:text-[var(--secundario)] transition-colors">
+                Muebles
               </Link>
             </li>
             <li className="flex md:hidden ">
@@ -75,7 +70,7 @@ export default function Header() {
             </li>
           </ul>
         </nav>
-        <Link to={'#'} className="bg-[var(--primario)] text-white px-3 py-2 font-medium rounded hidden md:block hover:bg-[var(--secundario)] hover:shadow-lg hover:-translate-y-0.5 transition-all ">Contáctanos</Link>
+        <Link to={'/contacto'} className="bg-[var(--primario)] text-white px-3 py-2 font-medium rounded hidden md:block hover:bg-[var(--secundario)] hover:shadow-lg hover:-translate-y-0.5 transition-all ">Contáctanos</Link>
       </div>
     </header>
   )

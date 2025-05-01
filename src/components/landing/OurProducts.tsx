@@ -57,11 +57,10 @@ export default function OurProducts() {
                   <img src={producto.img} alt="Imagen Producto" className="object-cover" />
                 </div>
                 <div className="p-6 flex flex-col">
-                  <h3 className="mb-2 text-xl font-bold text-[var(--primario)]">{producto.nombre}</h3>
-                  <p className="text-[var(--secundario)] mb-4">Desde $ {producto.precio}</p>
+                  <h3 className="mb-3 text-2xl font-semibold text-[var(--primario)]">{producto.nombre}</h3>
                   <Link
                     className="w-full py-2 border border-[var(--primario)] text-center font-medium rounded hover:bg-[var(--primario)] hover:text-white transition-colors"
-                    to={'/productos'}
+                    to={'/muebles'}
                   >
                     Ver más
                   </Link>
@@ -72,7 +71,7 @@ export default function OurProducts() {
           <div className="flex justify-center">
             <Link
               className="flex items-center gap-1 bg-[var(--primario)] text-white py-2 px-3 rounded hover:bg-[var(--secundario)] hover:translate-x-1 transition-all font-medium"
-              to={"/productos"}>
+              to={"/muebles"}>
               Ver Catálogo Completo <ArrowRight size={20} />
             </Link>
           </div>
