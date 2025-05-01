@@ -63,7 +63,7 @@ export default function sillas() {
 
         <section className="mb-20">
           <h2 className="text-2xl mb-5 font-medium text-[var(--primario)]">Otros Mubeles</h2>
-          <ProdcutCarousel path='/productos/' data={otros} />
+          <ProdcutCarousel path='/' data={otros} />
         </section>
       </main>
       <Footer />

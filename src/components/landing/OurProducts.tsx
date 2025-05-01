@@ -3,7 +3,6 @@ import { Link } from "react-router-dom";
 
 type productosProps = {
   nombre: string;
-  precio: number;
   img: string;
 }
 
@@ -11,33 +10,27 @@ export default function OurProducts() {
   const productos = [
     {
       nombre: "Sillas",
-      precio: 450,
-      img: "/Silla1.jpeg"
+      img: "/Silla1.webp"
     },
     {
       nombre: "Bancas",
-      precio: 180,
-      img: "/productos/sillas/Silla5.jpeg"
+      img: "/productos/sillas/Silla5.webp"
     },
     {
       nombre: "Cajoneras",
-      precio: 320,
-      img: "/productos/cajoneras/Cajonera2.jpeg"
+      img: "/productos/cajoneras/Cajonera2.webp"
     },
     {
       nombre: "Centros de entretenimiento",
-      precio: 590,
-      img: "/productos/centro/centro1.jpeg"
+      img: "/productos/centro/centro1.webp"
     },
     {
       nombre: "Roperos",
-      precio: 280,
-      img: "/productos/roperos/ropero2.jpg"
+      img: "/productos/roperos/ropero2.webp"
     },
     {
       nombre: "Mesas de Comedor",
-      precio: 350,
-      img: "/product6.jpg"
+      img: "/product6.webp"
     },
   ]
 
@@ -54,7 +47,7 @@ export default function OurProducts() {
               <div className="bg-white rounded-b shadow-lg">
                 <div className="w-full h-[300px] overflow-hidden rounded-t">
 
-                  <img src={producto.img} alt="Imagen Producto" className="object-cover" />
+                  <img src={producto.img} alt="Imagen Producto" loading="lazy" className="object-cover" />
                 </div>
                 <div className="p-6 flex flex-col">
                   <h3 className="mb-3 text-2xl font-semibold text-[var(--primario)]">{producto.nombre}</h3>

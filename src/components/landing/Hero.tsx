@@ -22,7 +22,7 @@ export default function Hero() {
           </div>
         </div>
         <div className="max-h-[400px] rounded shadow-xl overflow-hidden">
-          <img src="/slide1.jpg" alt="Place holder img" className="object-cover" />
+          <img src="/slide1.webp" alt="Place holder img" className="object-cover" />
         </div>
       </div>
     </section>
