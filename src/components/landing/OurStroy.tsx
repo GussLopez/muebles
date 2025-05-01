@@ -28,9 +28,9 @@ export default function OurStory() {
           <p className="mb-15 text-lg text-gray-600 text-center">Desde 2005, MaderArt ha estado creando muebles de madera excepcionales para hogares que valoran la artesanía y la calidad. Somos un negocio familiar con raíces profundas en la tradición maderera de nuestra región.</p>
         </div>
         <div className="md:grid md:grid-cols-3 md:gap-10">
-          {historiaInfo.map((card: cardProps) => (
-            <div className="mb-5 p-5 bg-[var(--claro)] rounded">
-              <h4 className="mb-4 text-lg font-bold text-[var(--primario)]">{card.titulo}</h4>
+          {historiaInfo.map((card: cardProps, i) => (
+            <div key={i} className="mb-5 p-5 bg-[var(--claro)] rounded">
+              <h3 className="mb-4 text-lg font-bold text-[var(--primario)]">{card.titulo}</h3>
               <p className="text-gray-700">{card.texto}</p>
             </div>
           ))}

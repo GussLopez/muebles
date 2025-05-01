@@ -54,23 +54,18 @@ export default function Header() {
           {/* Desktop nav */}
           <ul className="flex gap-6">
             <li className="hidden md:block">
-              <Link to="#" className="flex items-center font-semibold text-sm hover:text-[var(--secundario)] transition-colors">
+              <Link to="/" className="flex items-center font-semibold text-sm hover:text-[var(--secundario)] transition-colors">
                 Inicio
               </Link>
             </li>
             <li className="hidden md:block">
-              <Link to="#" className="flex items-center font-semibold text-sm hover:text-[var(--secundario)] transition-colors">
+              <Link to="/productos" className="flex items-center font-semibold text-sm hover:text-[var(--secundario)] transition-colors">
                 Productos
               </Link>
             </li>
             <li className="hidden md:block">
-              <Link to="#" className="flex items-center font-semibold text-sm hover:text-[var(--secundario)] transition-colors">
-                Nosotros
-              </Link>
-            </li>
-            <li className="hidden md:block">
-              <Link to="#" className="flex items-center font-semibold text-sm hover:text-[var(--secundario)] transition-colors">
-                Inicio
+              <Link to="/nosotros" className="flex items-center font-semibold text-sm hover:text-[var(--secundario)] transition-colors">
+                Sobre nosotros
               </Link>
             </li>
             <li className="flex md:hidden ">

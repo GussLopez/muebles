@@ -12,7 +12,7 @@ export default function OurProducts() {
     {
       nombre: "Mesas de Comedor",
       precio: 450,
-      img: "/product1.jpg"
+      img: "/Silla5.jpeg"
     },
     {
       nombre: "Sillas y sillones",
