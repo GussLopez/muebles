@@ -57,3 +57,20 @@ export const centro = [
   { img: "centro6.jpeg" },
   { img: "centro7.jpeg" },
 ];
+
+export const sillones = [
+  { img: "Sillon1.jpeg" },
+  { img: "Sillon2.jpeg" },
+  { img: "Sillon3.jpeg" },
+  { img: "Sillon4.jpeg" },
+  { img: "Sillon5.jpeg" },
+];
+
+export const otros = [
+  { img: "Otros1.jpeg" },
+  { img: "Otros2.jpeg" },
+  { img: "Otros3.jpeg" },
+  { img: "Otros4.jpeg" },
+  { img: "Otros5.jpeg" },
+  { img: "Otros6.jpeg" },
+];

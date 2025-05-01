@@ -10,29 +10,29 @@ type productosProps = {
 export default function OurProducts() {
   const productos = [
     {
-      nombre: "Mesas de Comedor",
+      nombre: "Sillas",
       precio: 450,
-      img: "/Silla5.jpeg"
+      img: "/Silla1.jpeg"
     },
     {
-      nombre: "Sillas y sillones",
+      nombre: "Bancas",
       precio: 180,
-      img: "/product2.jpg"
+      img: "/productos/sillas/Silla5.jpeg"
     },
     {
-      nombre: "Mesas de Comedor",
+      nombre: "Cajoneras",
       precio: 320,
-      img: "/product3.jpg"
+      img: "/productos/cajoneras/Cajonera2.jpeg"
     },
     {
-      nombre: "Mesas de Comedor",
+      nombre: "Centros de entretenimiento",
       precio: 590,
-      img: "/product4.jpg"
+      img: "/productos/centro/centro1.jpeg"
     },
     {
-      nombre: "Mesas de Comedor",
+      nombre: "Roperos",
       precio: 280,
-      img: "/product5.jpg"
+      img: "/productos/roperos/ropero2.jpg"
     },
     {
       nombre: "Mesas de Comedor",
@@ -61,7 +61,7 @@ export default function OurProducts() {
                   <p className="text-[var(--secundario)] mb-4">Desde $ {producto.precio}</p>
                   <Link
                     className="w-full py-2 border border-[var(--primario)] text-center font-medium rounded hover:bg-[var(--primario)] hover:text-white transition-colors"
-                    to={'/'}
+                    to={'/productos'}
                   >
                     Ver más
                   </Link>
@@ -72,7 +72,7 @@ export default function OurProducts() {
           <div className="flex justify-center">
             <Link
               className="flex items-center gap-1 bg-[var(--primario)] text-white py-2 px-3 rounded hover:bg-[var(--secundario)] hover:translate-x-1 transition-all font-medium"
-              to={"/"}>
+              to={"/productos"}>
               Ver Catálogo Completo <ArrowRight size={20} />
             </Link>
           </div>
