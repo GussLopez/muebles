@@ -42,9 +42,9 @@ export default function OurProducts() {
             <h2 className="text-3xl mb-4 text-center font-bold text-[var(--primario)]">Nuestros Muebles</h2>
             <p className="text-center text-gray-600">Descubre nuestra colección de muebles artesanales, donde cada pieza cuenta una historia de dedicación y pasión por la madera</p>
           </div>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 mb-20">
-            {productos.map((producto: productosProps) => (
-              <div className="bg-white rounded-b shadow-lg">
+          <ul className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 mb-20">
+            {productos.map((producto: productosProps, i) => (
+              <li key={i} className="bg-white rounded-b shadow-lg">
                 <div className="w-full h-[300px] overflow-hidden rounded-t">
 
                   <img src={producto.img} alt="Imagen Producto" loading="lazy" className="object-cover" />
@@ -58,9 +58,9 @@ export default function OurProducts() {
                     Ver más
                   </Link>
                 </div>
-              </div>
+              </li>
             ))}
-          </div>
+          </ul>
           <div className="flex justify-center">
             <Link
               className="flex items-center gap-1 bg-[var(--primario)] text-white py-2 px-3 rounded hover:bg-[var(--secundario)] hover:translate-x-1 transition-all font-medium"

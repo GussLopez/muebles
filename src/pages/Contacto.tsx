@@ -13,15 +13,24 @@ export default function Contacto() {
             Si tienes dudas o necesitas más información, escríbenos por WhatsApp.
           </p>
 
-          <a
-            href="https://wa.me/5215512345678?text=Hola,%20quisiera%20más%20información"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="inline-flex items-center gap-2 px-5 py-3 bg-green-500 text-white rounded-lg hover:bg-green-600 font-medium transition"
-          >
-            <img src="/whatsapp-icon.svg" alt="Whats app logo" className="w-10 h-10" />
-            Enviar mensaje por WhatsApp
-          </a>
+            <a
+              href="https://wa.me/527443460699?text=Hola,%20quisiera%20más%20información"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex w-[280px] mx-auto mb-5 justify-center items-center gap-2 px-5 py-3 text-lg bg-green-500 text-white rounded-lg hover:bg-green-600 font-medium transition"
+            >
+              <img src="/whatsapp-icon.svg" alt="Whats app logo" className="w-10 h-10" />
+              +52 7443460699
+            </a>
+            <a
+              href="https://wa.me/527441360162?text=Hola,%20quisiera%20más%20información"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex w-[280px] mx-auto justify-center items-center gap-2 px-5 py-3 text-lg bg-green-500 text-white rounded-lg hover:bg-green-600 font-medium transition"
+            >
+              <img src="/whatsapp-icon.svg" alt="Whats app logo" className="w-10 h-10" />
+              +52 7441360162
+            </a>
         </div>
       </div>
       <Footer />
