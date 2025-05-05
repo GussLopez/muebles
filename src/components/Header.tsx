@@ -10,7 +10,7 @@ export default function Header() {
   return (
     <header className="bg-white shadow border-b border-gray-200">
       <div className="max-w-[1400px] mx-auto px-4 py-4 flex items-center justify-between">
-        <div className="text-2xl font-bold hover:text-[var(--secundario)] transition-colors cursor-pointer">Marca</div>
+        <Link to={'/'} className="text-2xl font-bold hover:text-[var(--secundario)] transition-colors cursor-pointer">Marca</Link>
         {toggleSidebar && (
           <div
             className="fixed inset-0 z-[10] bg-black/30 backdrop-blur-sm md:hidden"
